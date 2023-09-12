@@ -41,9 +41,9 @@ const Table = () => {
                         <div className="self-stretch py-2 justify-start items-center inline-flex">
                           <div className="w-px h-10 relative"></div>
                           <select className="inline-flex grow shrink basis-0 text-black text-opacity-90 text-base font-normal leading-normal tracking-tight">
-                            <option value="Value1" c>
+                            <type value="Value1" c>
                               Property
-                            </option>
+                            </type>
                           </select>
                           <div className="w-6 h-px relative"></div>
                           <div className="w-6 h-6 relative"></div>

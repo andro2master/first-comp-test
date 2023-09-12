@@ -1,10 +1,12 @@
 import React from 'react';
+
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ButtonSharpPrimarySm from './Modules/Components/Buttons/Sharp/Primary/sm/ButtonSharpPrimarySm'
 import Table from './Modules/Components/Table';
+// const LazyLoading = React.lazy(() => import('./Modules/Components/Table'));
 import ButtonSharpPrimaryLg from './Modules/Components/Buttons/Sharp/Primary/lg/ButtonSharpPrimaryLg';
 import ButtonSharpPrimaryMd from './Modules/Components/Buttons/Sharp/Primary/md/ButtonSharpPrimaryMd';
 import ButtonSharpPrimary2xl from './Modules/Components/Buttons/Sharp/Primary/2xl/ButtonSharpPrimary2xl';
@@ -55,10 +57,25 @@ import ButtonSmoothTextOnlyMd from './Modules/Components/Buttons/Smooth/TextOnly
 import ButtonSmoothTextOnlySm from './Modules/Components/Buttons/Smooth/TextOnly/sm/ButtonSmoothTextOnlySm';
 import ButtonSmoothTextOnlyXl from './Modules/Components/Buttons/Smooth/TextOnly/xl/ButtonSmoothTextOnlyXl';
 import Primary from './Modules/Components/Buttons/Primary';
+import OLGroup431 from './Modules/Components/IconSet/OutlineIcons/OLGroup431';
+import OLGroup430 from './Modules/Components/IconSet/OutlineIcons/OLGroup430';
+import OLGroup429 from './Modules/Components/IconSet/OutlineIcons/OLGroup429';
+import OLGroup428 from './Modules/Components/IconSet/OutlineIcons/OLGroup428';
+import OLGroup427 from './Modules/Components/IconSet/OutlineIcons/OLGroup427';
+import OLGroup426 from './Modules/Components/IconSet/OutlineIcons/OLGroup426';
+import OLGroup425 from './Modules/Components/IconSet/OutlineIcons/OLGroup425';
+import LIGroup432 from './Modules/Components/IconSet/FiledIcons/FIGroup432';
+import LIGroup433 from './Modules/Components/IconSet/FiledIcons/FIGroup433';
+import LIGroup434 from './Modules/Components/IconSet/FiledIcons/FIGroup434';
+import LIGroup435 from './Modules/Components/IconSet/FiledIcons/FIGroup435';
+import LIGroup436 from './Modules/Components/IconSet/FiledIcons/FIGroup436';
+import LIGroup437 from './Modules/Components/IconSet/FiledIcons/FIGroup437';
+import LIGroup441 from './Modules/Components/IconSet/FiledIcons/FIGroup441';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <>
     <Primary />
     {/* <App /> */}
     <h1>Sharp Primary</h1>
@@ -139,7 +156,35 @@ root.render(
     <DisabledButtonSmoothPrimaryLg />
     <DisabledButtonSmoothPrimaryXl />
     <DisabledButtonSmoothPrimary2xl />
+    <hr />
+    <br />
+    <h1>Table</h1>
     <Table />
+    <hr />
+    <br />
+    <h1>Outline Icons</h1>
+    <div className='flex m-5 border-spacing-1'>
+    <OLGroup431 />
+    <OLGroup430 />
+    <OLGroup429 />
+    <OLGroup428 />
+    <OLGroup427 />
+    <OLGroup426 />
+    <OLGroup425 />
+    <hr />
+    </div>
+    <br />
+    <h1>Filed Icons</h1>
+    <div className='flex m-5 border-spacing-1'>
+    <LIGroup432 />
+    <LIGroup433 />
+    <LIGroup434 />
+    <LIGroup435 />
+    <LIGroup436 />
+    <LIGroup437 />
+    <LIGroup441 />
+    </div>
+    </>
   </React.StrictMode>
 );
 
